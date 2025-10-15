@@ -53,7 +53,6 @@ jobs:
       env:
         SCCACHE_GHA_ENABLED: "true"
         RUSTC_WRAPPER: "sccache"
-
     # runs cargo with defaults flags, using the default `lcov` output
     - name: Test
       run: cargo llvm-cov --all-features --workspace --exclude plastic --exclude plastic_tui --lcov --output-path lcov.info
@@ -67,6 +66,13 @@ jobs:
         token: ${{ secrets.CODECOV_TOKEN }}
         files: lcov.info
         fail_ci_if_error: true
+
+    - name: Upload Linux build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: linux-ci-build
+        path: target/ci
+        if-no-files-found: error
 
     - name: Create Debian package
       run: cargo deb
@@ -112,4 +118,9 @@ jobs:
         env:
           SCCACHE_GHA_ENABLED: "true"
           RUSTC_WRAPPER: "sccache"
-
+      - name: Upload Windows build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-ci-build
+          path: target/ci
+          if-no-files-found: error

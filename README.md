@@ -1,14 +1,14 @@
 <p align="center">
   <!-- Really ugly workaround, but the image isn't working in crates.io without this -->
-  <a href="https://github.com/Amjad50/plastic"><img alt="plastic" src="https://raw.githubusercontent.com/Amjad50/plastic/refs/heads/master/images/logo.svg" width="60%"></a>
+  <a href="https://github.com/realagiorganization/plastic"><img alt="plastic" src="https://raw.githubusercontent.com/realagiorganization/plastic/refs/heads/master/images/logo.svg" width="60%"></a>
   <p align="center">NES emulator in <em>Rust</em></p>
 </p>
 
 
-[![Build status](https://github.com/Amjad50/plastic/workflows/Rust/badge.svg)](https://actions-badge.atrox.dev/Amjad50/plastic/goto)
-[![codecov](https://codecov.io/gh/Amjad50/plastic/branch/master/graph/badge.svg)](https://codecov.io/gh/Amjad50/plastic)
-[![dependency status](https://deps.rs/repo/github/Amjad50/plastic/status.svg)](https://deps.rs/repo/github/Amjad50/plastic)
-[![license](https://img.shields.io/github/license/Amjad50/plastic)](./LICENSE)
+[![Rust CI](https://github.com/realagiorganization/plastic/actions/workflows/rust.yml/badge.svg?branch=master)](https://github.com/realagiorganization/plastic/actions/workflows/rust.yml)
+[![codecov](https://codecov.io/gh/realagiorganization/plastic/branch/master/graph/badge.svg)](https://codecov.io/gh/realagiorganization/plastic)
+[![dependency status](https://deps.rs/repo/github/realagiorganization/plastic/status.svg)](https://deps.rs/repo/github/realagiorganization/plastic)
+[![license](https://img.shields.io/github/license/realagiorganization/plastic)](./LICENSE)
 <br>
 [![Crates.io Version](https://img.shields.io/crates/v/plastic_core?label=plastic_core)](https://crates.io/crates/plastic_core)
 [![docs.rs](https://img.shields.io/docsrs/plastic_core)](https://docs.rs/plastic_core/latest/plastic_core/)
@@ -54,7 +54,7 @@ cargo install plastic
 cargo install plastic_tui
 ```
 
-If you are using Debian/Ubuntu, you can directly install the `.deb` package from [here](https://nightly.link/Amjad50/plastic/workflows/rust/master/plastic.deb.zip)
+If you are using Debian/Ubuntu, you can directly install the `.deb` package from [here](https://nightly.link/realagiorganization/plastic/workflows/rust/master/plastic.deb.zip)
 ```sh
 unzip plastic.deb.zip
 sudo dpkg -i plastic_*.deb # will have the version in the name
