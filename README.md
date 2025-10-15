@@ -20,7 +20,7 @@
 
 **plastic** is a [NES][NES-wiki] emulator built from scratch using [Rust][Rust].
 
-This is a personal project for fun and to experience emulating hardware and connecting them together.
+This is a personal  project for fun and to experience emulating hardware and connecting them together.
 
 - [Building and installation](#building-and-installation)
   - [Dependencies](#dependencies)
@@ -226,3 +226,4 @@ For the CPU(6502), [this](https://www.masswerk.at/6502/6502_instruction_set.html
 [gilrs]: https://gitlab.com/gilrs-project/gilrs
 [egui]: https://github.com/emilk/egui
 [ratatui]: https://github.com/ratatui/ratatui
+
