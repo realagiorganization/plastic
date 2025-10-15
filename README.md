@@ -73,6 +73,12 @@ docker run --rm -it ghcr.io/realagiorganization/plastic:tui-latest
 ```
 To run a specific release, replace `latest` with the tag name (for example, `ui-v0.3.4`). Use `ui-<shortsha>` or `tui-<shortsha>` to match a particular commit.
 
+For local builds you can use the helper make target:
+```sh
+make all_containers
+```
+This will build both Docker variants (`ui` and `tui`) and produce a Vagrant box under `build/`.
+
 If you are using Arch Linux, `plastic` is available in the [official repositories](https://archlinux.org/packages/extra/x86_64/plastic/):
 
 ```sh
