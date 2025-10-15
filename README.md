@@ -79,6 +79,14 @@ make all_containers
 ```
 This will build both Docker variants (`ui` and `tui`) and produce a Vagrant box under `build/`.
 
+#### Helper Scripts
+
+Utility scripts live in `scripts/`:
+
+- `scripts/run-ui.sh [image] [args...]`: Runs the GUI container image. Override the image tag or pass additional CLI args as needed.
+- `scripts/run-tui.sh [image] [args...]`: Opens the TUI container image with an interactive terminal.
+- `scripts/download-latest-artifacts.sh [workflow] [branch]`: Uses the GitHub CLI to pull the most recent workflow artifacts and logs into `artifacts/`.
+
 If you are using Arch Linux, `plastic` is available in the [official repositories](https://archlinux.org/packages/extra/x86_64/plastic/):
 
 ```sh

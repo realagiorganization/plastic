@@ -20,6 +20,8 @@ healthy. Update it when adding or retiring automation.
 
 - **Codecov**: Coverage reports generated in CI are uploaded to Codecov to track
   test coverage over time.
+- Use `scripts/download-latest-artifacts.sh` to grab the most recent workflow
+  artifacts and logs when triaging issues locally.
 
 ## Manual Tasks
 
