@@ -79,6 +79,10 @@ make all_containers
 ```
 This will build both Docker variants (`ui` and `tui`) and produce a Vagrant box under `build/`.
 
+The container GitHub Action runs an automated smoke test that launches the TUI
+image with `test_roms/.startup.nes`; the captured stdout/stderr logs are
+available under the workflow run’s artifacts.
+
 #### Helper Scripts
 
 Utility scripts live in `scripts/`:
