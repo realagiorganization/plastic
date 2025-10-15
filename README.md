@@ -83,6 +83,18 @@ The container GitHub Action runs an automated smoke test that launches the TUI
 image with `test_roms/.startup.nes`; the captured stdout/stderr logs are
 available under the workflow run’s artifacts.
 
+#### ROM Management
+
+Use the workspace cargo command to point `.startup.nes` at any ROM shipped in
+`test_roms`:
+
+```sh
+cargo rom link sprite_hit_tests/01.basics.nes
+```
+
+The command keeps the link under `test_roms/.startup.nes` updated. Run `cargo rom list`
+to see all discoverable ROMs.
+
 #### Helper Scripts
 
 Utility scripts live in `scripts/`:
