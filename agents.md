@@ -7,6 +7,9 @@ healthy. Update it when adding or retiring automation.
 
 - **Rust workflow** (`.github/workflows/rust.yml`): Builds and tests the project on
   Linux and Windows, gathers coverage, and publishes build artifacts for review.
+- **Container workflow** (`.github/workflows/container.yml`): Builds Docker images
+  for the GUI (`ui`) and TUI (`tui`) variants and publishes them to GHCR with
+  release and commit tags.
 
 ## Release Automation
 

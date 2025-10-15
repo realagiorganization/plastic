@@ -1,0 +1,6 @@
+target
+.git
+.github
+.gitignore
+.cargo
+test_roms

@@ -6,6 +6,7 @@
 
 
 [![Rust CI](https://github.com/realagiorganization/plastic/actions/workflows/rust.yml/badge.svg?branch=master)](https://github.com/realagiorganization/plastic/actions/workflows/rust.yml)
+[![Container](https://github.com/realagiorganization/plastic/actions/workflows/container.yml/badge.svg?branch=master)](https://github.com/realagiorganization/plastic/actions/workflows/container.yml)
 [![codecov](https://codecov.io/gh/realagiorganization/plastic/branch/master/graph/badge.svg)](https://codecov.io/gh/realagiorganization/plastic)
 [![dependency status](https://deps.rs/repo/github/realagiorganization/plastic/status.svg)](https://deps.rs/repo/github/realagiorganization/plastic)
 [![license](https://img.shields.io/github/license/realagiorganization/plastic)](./LICENSE)
@@ -59,6 +60,18 @@ If you are using Debian/Ubuntu, you can directly install the `.deb` package from
 unzip plastic.deb.zip
 sudo dpkg -i plastic_*.deb # will have the version in the name
 ```
+
+#### Containers
+
+Images are published to GitHub Container Registry with UI and TUI variants. For the latest build from `master`:
+```sh
+# Run the GUI (requires X11/Wayland forwarding)
+docker run --rm ghcr.io/realagiorganization/plastic:ui-latest
+
+# Run the terminal UI in the current TTY
+docker run --rm -it ghcr.io/realagiorganization/plastic:tui-latest
+```
+To run a specific release, replace `latest` with the tag name (for example, `ui-v0.3.4`). Use `ui-<shortsha>` or `tui-<shortsha>` to match a particular commit.
 
 If you are using Arch Linux, `plastic` is available in the [official repositories](https://archlinux.org/packages/extra/x86_64/plastic/):
 
