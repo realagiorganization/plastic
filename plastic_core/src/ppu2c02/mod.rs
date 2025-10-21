@@ -988,7 +988,7 @@ where
                 self.secondary_oam = [Sprite::filled_ff(); 8];
             }
             // fetch and reload shift registers
-            8..=256 if self.cycle % 8 == 0 => {
+            8..=256 if self.cycle.is_multiple_of(8) => {
                 self.reload_background_shift_registers();
 
                 if self.cycle != 256 {
